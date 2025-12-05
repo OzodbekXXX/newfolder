@@ -527,5 +527,5 @@
 # for n in range(2,11):
 #     if foydalanuvchi%n == 0:
 #         print(f"{foydalanuvchi} soni {n} ga qoldiz bo'linadi")
-a = 12
-print(a)
+
+print('Salom dunyo')
