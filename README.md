@@ -1,0 +1,2 @@
+# newfolder
+Takrorlash uchun
