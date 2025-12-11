@@ -529,3 +529,401 @@
 #         print(f"{foydalanuvchi} soni {n} ga qoldiz bo'linadi")
 
 # print('Salom dunyo')
+# avto = {"model":'nexia1', 'rang':'oq'}
+# print(avto)
+# talaba = {'ism':'murod olimov','yoshi':20,'t_yil':1997}
+# talaba['kurs'] = 4
+# talaba['fakultet'] ='kompyuter injiringi'
+# talaba['ism'] = 'abdulla'
+# print(talaba)
+# print(f'{talaba["ism"].title()},\
+# {talaba["t_yil"]} da tugilgan,\
+# {talaba["yoshi"]} yoshda')
+# talaba = {}
+# talaba['ism'] = 'ozodbek'
+# talaba["yosh"] = 28
+# talaba["kurs"] = 1
+# print(talaba)
+# print(f"{talaba['ism'].capitalize()} \
+# {talaba["kurs"]} kursda")
+
+# talaba = {'ism':'murod olimov', 'yosh':20, 't_yil': 1997}
+# print(talaba)
+# del talaba["yosh"]
+# print(talaba)
+# telefonlar = {
+#     'ali': 'iphone x',
+#     'vali': 'galaxy s9',
+#     'olim': 'mi 10 pro',
+#     'orif': 'nokia 3310'
+# }
+# # print(telefonlar['ali'])
+# phone = telefonlar.get('hasan','Bunday ism yoq')
+# print(phone)
+
+# ota = {'ism':"xasanboy", 't_yil':1966, 'shahar':'fargona'}
+# print(f'Otamning ismi {ota['ism'].title()},{ota['t_yil']}-yilda,{ota["shahar"].title()} viloyatida tugilgan')
+# akam = {'ism':'dilshod', 't_yil':1991, 'shahar':'fargona'}
+# print(f'')
+# ozim = {'ism':'ozodbek', 't_yi':1997, 'shahar': 'fargona'}
+# print(f'Ismim {ozim['ism'].title()},{ozim["t_yi"]}-yilda, {ozim["shahar"].title()} viloyatida tugilganman ')
+
+# taomlar= {
+#     'ali': 'osh',
+#     'vali': 'shorva',
+#     'karim': 'mastava',
+#     'ozod': 'manti',
+#     'sarvar': 'chuchvara'
+# }
+# print(taomlar['ali'])
+# print(taomlar.get('vali', 'bunday taom yoq'))
+# print(taomlar.get('jasurbek', 'topilmadi'))
+
+# lugat = {
+#     'integer': 'butun son',
+#     'float':"o'nlik son",
+#     "string":'mmatn',
+#     "if": 'agar',
+#     "else":"boshqa"
+# }
+# soz = input("Kalit so'z kiritng\n>>")
+# if soz in lugat:
+#     print(lugat[soz].capitalize())
+# else:
+#     print('Bunday soz mavjud emas')
+# tarjima = lugat.get(soz)
+# if tarjima != None:
+#     print(tarjima)
+# else:
+#     print('Bunday soz yoq')
+
+# tarjima = lugat.get(soz, "bunday so'z yo'q")
+# print(tarjima.title())
+# soz2 = soz.lower()
+# if soz2 in lugat:
+#     print(f"{soz2.title()} so'zi {lugat[soz2].title()} deb tarjima qilinadi")
+# else:
+#     print("Bunday so'z mavjud emas")
+
+# talaba = {
+#     'ism': 'ozodbek',
+#     'familya':'mavlanov',
+#     'yosh': 27,
+#     'fakultet':'informatika',
+#     'kurs':4
+# }
+# # print(talaba.items())
+# for kalit,qiymat in talaba.items():
+#     if isinstance(qiymat, str):
+#         print(f"kalit: {kalit.title()}")
+#         print(f"qiymat: {qiymat.title()}")
+#     else:
+#         print(f"qiymat: {qiymat}")
+
+# mahsulotlar = { 
+#     'olma':10000,
+#     'anor':20000,
+#     'uzum':40000,
+#     'anjir':25000,
+#     'shaftoli':30000
+#     }
+# bozorlik = ['anor','uzum','non','baliq']
+
+# for mahsulot in mahsulotlar:
+#     print(mahsulot)
+# for mahsulot in mahsulotlar:
+#     if mahsulot in bozorlik:
+#         print(f'{mahsulot.title()} {mahsulotlar[mahsulot]} som')
+# for mahsulot in mahsulotlar:
+#     if mahsulot not in bozorlik:
+#         print(f'Iltimoz, dokonizga {mahsulot} ham olib keling')
+
+# mahsulot = input('Mahsulot nomini kiriting\n>>')
+# if mahsulot not in bozorlik:
+#     bozorlik.append(mahsulot)
+#     print('Mahsulot qoshildi')
+# else:
+#     print(" Bu mahsulot allaqachon bor ")
+# print(bozorlik)
+# mahsulotlar = { 
+#     'olma':10000,
+#     'anor':20000,
+#     'uzum':40000,
+#     'anjir':25000,
+#     'shaftoli':30000
+#     }
+# print("Do'konimizdagi mahsulotlar")
+# for mahsulot in sorted(mahsulotlar):
+#     print(mahsulot.title())
+
+# telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310',
+#     'hamida':'galaxy s9',
+#     'maryam':'huawei p30',
+#     'tohir':'iphone x',
+#     'umar':'iphone x'    
+#     }
+# for tel in telefonlar.values():
+    # print(tel)
+
+# for tel in set(telefonlar.values()):
+#     # print(tel)
+
+# lugat = {
+#     'integer': 'butun son',
+#     'float':"o'nlik son",
+#     "string":'mmatn',
+#     "if": 'agar',
+#     "else":"boshqa"
+# }
+
+# for key,qiymat in sorted(lugat.items()):
+#     print(f"{key} - {qiymat} ")
+
+davlatlar ={
+    'aqsh':'washington d.c',
+    'italy': 'rim',
+    'malayziya':'kuala-lumpur',
+    "o'zbekiston":"toshkent",
+    "qirg'iston":"bishkek",
+    "qozog'izton":"nursulton",
+    "rassiya":"moskva",
+    'singapur':"sungapur",
+    "tojikiston":'dushanbi'
+}
+# print("Dunyo davlatlar:")
+# for davlat in sorted(davlatlar.keys()):
+#     if davlat == "aqsh":
+#         print(davlat.upper())
+#     else:
+#         print(davlat.capitalize())
+
+# print("Davlatlarning poytaxti:")
+# for q in sorted(davlatlar.values()):
+#     if q == 'washington d.c':
+#         print(q.title())
+#     else:
+#         print(q.capitalize())
+# davlat = input("Qaysi davlatni bilishni istaysiz\n>>").lower()
+# if davlat in davlatlar:
+#     print(f"{davlat.upper()} ning poytaxti {davlatlar[davlat].title()}")
+# else:
+#     print('Kechirasiz, bizda bu haqida malumot yuq')
+
+# result = davlatlar.get(davlat, 'Bizda bu haqida malumot yuq')
+# print(result)
+
+# taomlar = {
+#     "osh":20000,
+#     'manti':12000,
+#     'chuchvara':5000,
+#     'shashlik':15000,
+#     'kabob':6000,
+#     'lagmon':30000,
+#     'qozon kabob':16000
+# }
+# zakaz =[]
+# for n in range(3):
+#     zakaz.append(input(f"{n+1}-taom:"))
+# for taom in zakaz:
+#    narx = taomlar.get(taom, "bizda bunday taom yo'q")
+#    print(f'{taom}-{narx}')
+
+# taomlar = {
+#     "osh": 20000,
+#     "manti": 12000,
+#     "chuchvara": 5000,
+#     "shashlik": 15000,
+#     "kabob": 6000,
+#     "lagmon": 30000,
+#     "qozon kabob": 16000,
+#     "somsa": 8000,
+#     "norin": 25000,
+#     "sho'rva": 10000
+# }
+# for taom in taomlar.values():
+#     print(taom, end='')
+
+# zakaz = []
+
+# # 3 ta taom kiritish
+# for n in range(3):
+#     zakaz.append(input(f"{n+1}-taom: ").lower())
+
+# # Buyurtmalarni tekshirish
+# for taom in zakaz:
+#     narx = taomlar.get(taom, "bizda bunday taom yo'q")
+#     print(f"{taom} → {narx}")
+
+# son = 1
+# while son <= 5:
+#     print(son, end='')
+#     son = son+1
+
+# savol = 'Istalgan sonni kiritng '
+# savol+="(Dastur to'xtashi uchun 'exit' deb yozing)\n>>"
+# qiymat = ''
+# while qiymat != 'exit':
+#     qiymat = input(savol)
+#     if qiymat != 'exit':
+#         print(float(qiymat)**2)
+
+# atamalar = {
+#     'integer':'butun son',
+#     'string':'matn',
+#     'if':"agar",
+#     'else':'boshqa',
+# }
+
+# del atamalar['if']
+# print(atamalar)
+# soz = input("Biror bir so'z kiriting\n>>")
+# result = atamalar.get(soz, "Bunday so'z yo'q")
+# print(result.title())
+# if soz in atamalar:
+#     print(f"{soz.title()} so'zi {atamalar[soz].title()} deb tarjima qilinadi")
+# else:
+#     print("Bunday so'z mavjuda emas")
+
+# atamalar = {
+#     'integer':'butun son',
+#     'string':'matn',
+#     'if':"agar",
+#     'else':'boshqa',
+# }
+# for key, value in atamalar.items():
+#     print(f"Kalit:{key}\nQiymat:{value}\n")
+
+# telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310'
+#     }
+# for k, q in telefonlar.items():
+#     print(f"{k.title()}ning telifoni {q}")
+
+# mahsulotlar = { # Do'kondagi mahsulotlar
+#     'olma':10000,
+#     'anor':20000,
+#     'uzum':40000,
+#     'anjir':25000,
+#     'shaftoli':30000
+#     }
+
+# bozorlik = ['olma', 'limon', 'anor', 'jiyda']
+
+# for mahsulot in mahsulotlar:
+#     if mahsulot in bozorlik:
+#         print(f"{mahsulot.title()}ning narhi {mahsulotlar[mahsulot]} so'm")
+# for mahsulot in bozorlik:
+#     if mahsulot not in mahsulotlar:
+#         print(f"Iltimoz, do'konizga {mahsulot} olib kelib qo'ying")
+# print(mahsulotlar.keys())
+# for mahsulot in mahsulotlar:
+#     print(mahsulot)
+
+# talaba_0 = {
+#     'ism':'alijon',
+#     'familiya':'shamshiyev',
+#     'yosh':22,
+#     'fakultet':'matematika',
+#     'kurs':4
+#     }
+
+# print(talaba_0.items())
+# for key, value in talaba_0.items():
+#     print(f"kalit:{key}")
+#     print(f"Qiymat:{value}\n")
+
+# telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310'
+#     }
+# for key, value in telefonlar.items():
+#     print(f"{key.title()}ning telifoni {value}")
+
+# mahsulotlar = { # Do'kondagi mahsulotlar
+#     'olma':10000,
+#     'anor':20000,
+#     'uzum':40000,
+#     'anjir':25000,
+#     'shaftoli':30000
+#     }
+
+# print(mahsulotlar.keys())
+# print("Do'kondagi mahsulotlar")
+# for mahsulot in mahsulotlar:
+#     print(mahsulot)
+
+# bozorlik = ['anor','uzum','non','baliq']
+# for mahsulot in mahsulotlar:
+#     if mahsulot in bozorlik:
+#         print(f"{mahsulot.title()}ning narhi {mahsulotlar[mahsulot]} so'm")
+# for mahsulot in bozorlik:
+#     if mahsulot not in mahsulotlar:
+#         print(f"Iltimoz,do'koningizda {mahsulot} yo'q ekan olib keling")
+# print(mahsulotlar.keys())
+# print("Do'konimizdagi mahsulotlar:")
+# for mahsulot in sorted(mahsulotlar):
+#     print(mahsulot.title())
+# telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310',
+#     'abdulla':'iphone x'
+#     }
+# print(telefonlar.values())
+# for tel in set(telefonlar.values()):
+#     print(tel)
+# telefonlar = {
+#     'ali':'iphone x',
+#     'vali':'galaxy s9',
+#     'olim':'mi 10 pro',
+#     'orif':'nokia 3310',
+#     'hamida':'galaxy s9',
+#     'maryam':'huawei p30',
+#     'tohir':'iphone x',
+#     'umar':'iphone x'    
+#     }
+# for tel in set(telefonlar.values()):
+#     print(tel)
+
+# izoh ={
+#     "Boolean":'Mantiqiy qiymat',
+#     "Float":'O\'nlik son',
+#     "For":'Biror amalni qayta-qayta bajarish tsikli',
+#     'If':'Shartlarni tekshirish operatori',
+#     "Integer":'Butun son',
+#     "Set":"Ortiqcha qiymatlarni olib tashlaydi",
+#     "Keys":'Kalit so\'zlarni ekranga chiqaradi',
+#     "Value":"Qiymatlarni ekranga chiqaradi"
+# }
+# for key, value in sorted(izoh.items()):
+#     print(f"{key} - {value}")
+
+davlatlar ={
+    "Italiya":"Rim",
+    "Malayziya":"Kuala-Lumpur",
+    "O'zbekiston":"Toshkent",
+    "Qirg'iziston":"Bishkek",
+    "Qozog'iston":"Nursulton",
+    "Rassiya":"Moskva",
+     "AQSH":"Washington D.C.",
+    "Singapur":"Sungapur",
+    "Tojikiston":"Dushanbe"
+}
+# print("Dunyo davlatlari:")
+# for k,q in sorted(davlatlar.items()):
+#     print(k)
+# print("Davlatlarning poytaxtlari:")
+# for k,q in sorted(davlatlar.items()):
+#     print(q)
+savol = input("Qaysi davlatning poytaxtini bilishni istaysiz?\n>>")
+result = davlatlar.get(davlatlar[savol], "Kechirasiz, bizda bu haqida ma'lumot yo'q")
